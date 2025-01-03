@@ -1,0 +1,246 @@
+/* CSS for the store */
+#store-body{
+    background-color: rgb(35, 27, 48);
+}
+
+.cover img{
+    width: 60%;
+    height: 500px;
+}
+
+.text1{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    right: 1%;
+    font-size: 20px;
+    color: rgb(226, 230, 235);
+    text-transform: capitalize;
+    width: 300px;
+    word-spacing: 0px;
+    font-weight: normal;
+    line-height: 50px;
+    animation: move 2s infinite;
+    animation-timing-function: linear;
+}    
+
+@keyframes move{
+    from{margin-left: 0px;}
+    to{margin-left: 100px;}
+}
+
+.content-section1 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    position: relative;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: yellow;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for add to cart and purchase buttons */
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+/* CSS for the shop items */
+.shop-item {
+    margin: 30px;
+    color: white;
+}
+
+.shop-item-title {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* CSS for the bill information section */
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid yellow;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    color: white;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+    color: white;
+}
+
+.cart-quantity-input{
+    border: 1px solid var(white);
+    outline-color: black;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CSS for remove button */
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid yellow;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+}
+
+.text2{
+    color: yellow;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+
+/* CSS for the form */
+.form-info{
+    margin-top: 0%;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    margin-left: 22%;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    margin-bottom: 30%;
+}
